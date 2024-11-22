@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.product-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    padding: 20px; 
+  }
+  
+  /* Box model properties for product cards */
+  .product-card {
+    width: 300px; 
+    padding: 15px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+  }
+  
+  /* Styling for the image container */
+  .product-image {
+    overflow: hidden; /* Prevent the image from overflowing */
+    margin-bottom: 15px; 
+  }
+  
+  /* Styling for the image */
+  .product-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc; 
+    display: block;
+  }
+  
+  /* Flex properties for product info */
+  .product-info {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  
+  /* Button styling */
+  .buy-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto;
+    width: 100%;
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Button hover effect */
+  .buy-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* Optional: Ensure that product cards are responsive */
+  @media (max-width: 768px) {
+    .product-container {
+      justify-content: center;
+    }
+  
+    .product-card {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-card">
+        <div class="product-image">
+        <img src="/download.jpeg" alt="Product 1">
+        </div>
+        <div class="product-info">
+        <h3 class="product-title">Product Name</h3>
+        <p class="product-price">$99.99</p>
+        <button class="buy-button">Add to Cart</button>
+        </div>
+        </div>
+        <!-- More product cards -->
+        </div>
+</body>
+</html>
